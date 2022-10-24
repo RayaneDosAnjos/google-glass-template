@@ -50,7 +50,7 @@
             </hgroup>
                 </header>
 
-                <form action="">
+                <form method="post" id="FContato">
                     <fieldset id="ususario">
 <legend>Identificação do Usuário</legend>
     <p><label for="CNome">Nome:</label><input type="text" name="TNome" id="CNome" size="20" maxlength="25" placeholder="Nome Completo"> </p>
@@ -67,14 +67,36 @@
 <legend>Endereço do Usuário</legend>
    <p><label for="CRua">Logradouro:</label><input type="text" name="TRua" id="CRua" size="13" maxlength="80" placeholder="Rua,Av,Trav, .."> </p>
    <p><label for="CNumber">Número:</label><input type="number" name="TNumber" id="CNumber" min="0" max="9999"></p>
-    Estado:
-    Cidade:
+     <p><label for="CEst">Estado:</label>
+        <select name="teste" id="CEst">
+            <optgroup label="Região sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+                <option selected value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </optgroup>
+       </select></p>
+        <label for="CCid">Cidade:</label>
+        <input type="text" name="TCid" id="CCid" maxlength="40" size="20" placeholder="Sua Cidade" list="Cidade">
+        <datalist id="Cidade" >
+            <option value="Rio de Janeiro"></option>
+            <option value="Nova Iguaçu"></option>
+            <option value="Niteroi"></option>
+            <option value="Belford Roxo"></option>
+        </datalist>
                     </fieldset> 
 
                     <fieldset id="mensagem">
 <legend>Mensagem do Usuário</legend>
-    Grau de Urgência:
-    Mensagem:
+    <p><label for="CUrg">Grau de Urgência:</label>
+    Min<input type="range" name="TUrg" id="CUrg" min="0" max="10" step="2">Max</p>
+    <p><label for="CMsg">Mensagem:</label>
+    <textarea name="TMsg" id="CMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
                     </fieldset>
 
                     <fieldset id="pedido">
