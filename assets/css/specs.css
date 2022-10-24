@@ -6,9 +6,6 @@ iframe#frame-spec{
     width: 400px;
     height: 280px;
     border: none;
-    overflow: hidden;
+    scroll-behavior: overlay;
     
-}
-iframe#frame-spec::-webkit-scrollbar{
-    display: none;
 }
