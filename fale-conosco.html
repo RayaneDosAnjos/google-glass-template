@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fale-conosco</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
     <script language="javascript" src="./assets/js/funcoes.js"></script>
 </head>
 <body>
@@ -38,40 +39,56 @@
             </nav>
         </header>
 
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+        <hgroup>
+    <h3>Fale Conosco > Contato</h3>
+    <h1>Formulário de Contato</h1>
+    <h2>por Gustavo Guanabara</h2>
+    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+                </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+                <form action="">
+                    <fieldset id="ususario">
+<legend>Identificação do Usuário</legend>
+    <p><label for="CNome">Nome:</label><input type="text" name="TNome" id="CNome" size="20" maxlength="25" placeholder="Nome Completo"> </p>
+    <p><label for="CSenha">Senha:</label><input type="password" name="TSenha" id="CSenha" size="8" maxlength="8" placeholder="8 Dígitos"></p>
+    <p><label for="CEmail">E-mail:</label><input type="email" name="TEmail" id="CEmail" size="20" maxlength="40"></p>
+    <fieldset id="sexo"><legend>Sexo:</legend> 
+        <input type="radio" name="TSexo" id="CMasc"><label for="CMasc">Masculino</label><br>
+        <input type="radio" name="TSexo" id="CFem"><label for="CFem">Feminino</label>
+    </fieldset>
+   <p>Data de Nascimento: <input type="date" name="TNasc" id="CNasc"></p>
+                    </fieldset>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
+                    <fieldset id="endereco">
+<legend>Endereço do Usuário</legend>
+   <p><label for="CRua">Logradouro:</label><input type="text" name="TRua" id="CRua" size="13" maxlength="80" placeholder="Rua,Av,Trav, .."> </p>
+   <p><label for="CNumber">Número:</label><input type="number" name="TNumber" id="CNumber" min="0" max="9999"></p>
     Estado:
     Cidade:
+                    </fieldset> 
 
-Mensagem do Usuário
+                    <fieldset id="mensagem">
+<legend>Mensagem do Usuário</legend>
     Grau de Urgência:
     Mensagem:
+                    </fieldset>
 
-Quero um Google Glass
+                    <fieldset id="pedido">
+<legend>Quero um Google Glass</legend>
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
     Preço Total: R$
-
+                    </fieldset>
+                </form>
 
 [BOTÃO ENVIAR]
-
+            </article>
+        </section>
 <footer id="rodape">
     <p>
         Copyright &copy; 2013 - by Gustavo Guanabara <br>
